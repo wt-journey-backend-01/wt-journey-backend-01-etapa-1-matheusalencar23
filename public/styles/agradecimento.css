@@ -1,0 +1,22 @@
+main {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+  color: #e69500;
+}
+
+main ul {
+  list-style: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
