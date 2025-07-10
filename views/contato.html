@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBurguer - Contato</title>
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <link rel="stylesheet" href="/public/styles/form.css" />
+    <link rel="stylesheet" href="/public/styles/contato.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/views/index.html" class="link-title">
+        <h1>DevBurguer</h1>
+      </a>
+      <p>O verdadeiro sabor do hambúrguer artesanal.</p>
+    </header>
+
+    <main class="centralizado">
+      <section class="sugestao">
+        <h2 class="section-title">Fale conosco</h2>
+        <form method="POST" action="/contato">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              name="email"
+              required
+              placeholder="contato@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <input id="assunto" name="assunto" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              required
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 DevBurguer. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

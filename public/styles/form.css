@@ -1,0 +1,21 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+}
