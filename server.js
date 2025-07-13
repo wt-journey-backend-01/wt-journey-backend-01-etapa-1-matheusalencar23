@@ -63,6 +63,11 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
+app.get("/api/lanches", (req, res) => {
+  const lanches = require("./public/data/lanches.json");
+  res.status(200).send(lanches);
+});
+
 app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
 });
@@ -85,8 +90,6 @@ function gerarPaginaAgradecimento(title, content, res) {
       newHtml = html
         .replace("{{title}}", title)
         .replace("{{content}}", content);
-
-      // newHtml = html.replace("{{title}}", "").replace("{{content}}", "");
 
       res.send(newHtml);
     }
